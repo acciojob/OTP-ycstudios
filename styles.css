@@ -1,1 +1,73 @@
 /*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#verification_heading {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+#verification_subtext {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.code-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.code {
+    width: 50px;
+    height: 60px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.code:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    transform: scale(1.05);
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.code:not(:placeholder-shown) {
+    border-color: #4CAF50;
+}
